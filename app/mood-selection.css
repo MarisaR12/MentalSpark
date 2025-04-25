@@ -1,0 +1,201 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    "Roboto",
+    -apple-system,
+    Helvetica,
+    sans-serif;
+  background-color: #fdfefd;
+}
+
+/* Main container */
+.mood-container {
+  background-color: rgba(253, 254, 255, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+/* Header section */
+.header-icons {
+  align-self: start;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.header-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 34px;
+  flex-shrink: 0;
+}
+
+.header-icon-secondary {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 31px;
+  align-self: start;
+  flex-shrink: 0;
+}
+
+/* Greeting section */
+.greeting-section {
+  display: flex;
+  margin-top: 72px;
+  width: 100%;
+  padding-left: 38px;
+  padding-right: 38px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.greeting-text {
+  color: rgba(63, 61, 86, 1);
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.feeling-question {
+  color: rgba(63, 61, 86, 1);
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+/* Mood grid layout */
+.mood-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+  margin-top: 73px;
+}
+
+.mood-row {
+  display: flex;
+  align-items: stretch;
+  gap: 31px;
+  width: 100%;
+}
+
+/* Mood card styling */
+.mood-card {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  display: flex;
+  padding: 52px 12px 14px;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+}
+
+.emoji-container {
+  align-self: center;
+  display: flex;
+  width: 72px;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.emoji-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 72px;
+  align-self: stretch;
+}
+
+/* Mood buttons */
+.mood-button {
+  border-radius: 15px;
+  background-color: rgba(105, 139, 207, 1);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  padding: 9px;
+  font-family:
+    Roboto,
+    -apple-system,
+    Helvetica,
+    sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  white-space: nowrap;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+/* Specific button styles */
+.happy-button {
+  margin-top: 47px;
+  padding-left: 43px;
+  padding-right: 43px;
+}
+
+.tired-button {
+  margin-top: 50px;
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.normal-button {
+  margin-top: 41px;
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
+.stressed-button {
+  margin-top: 44px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* Bottom image */
+.bottom-image {
+  aspect-ratio: 1.27;
+  object-fit: contain;
+  object-position: center;
+  width: 160px;
+  margin-top: 51px;
+  margin-left: 13px;
+  max-width: 100%;
+}
+
+/* Specific card adjustments to match design */
+.mood-card:nth-child(1) {
+  padding-top: 55px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
+
+.mood-card:nth-child(2) {
+  padding-top: 52px;
+}
+
+.mood-row:nth-child(2) .mood-card {
+  padding-bottom: 20px;
+}
+
+.mood-row:nth-child(2) .mood-card:nth-child(1) {
+  padding-top: 55px;
+  padding-left: 11px;
+  padding-right: 11px;
+}
