@@ -1,0 +1,114 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Roboto,
+    -apple-system,
+    Helvetica,
+    sans-serif;
+  background-color: #feffff;
+}
+
+/* Main container */
+.meditation-screen {
+  background-color: rgba(254, 255, 255, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+/* Header section with icons */
+.header-icons {
+  align-self: start;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.menu-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 34px;
+  flex-shrink: 0;
+}
+
+.settings-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 31px;
+  align-self: start;
+  flex-shrink: 0;
+}
+
+/* Main content section */
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meditation-background {
+  aspect-ratio: 1.68;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 224px;
+}
+
+/* Meditation information */
+.meditation-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-label {
+  color: rgba(63, 61, 86, 1);
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 39px;
+}
+
+.meditation-title {
+  color: rgba(105, 139, 207, 1);
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.meditation-details {
+  color: rgba(63, 61, 86, 1);
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 17px;
+}
+
+/* Controls section */
+.controls-section {
+  margin-top: 19px;
+  display: flex;
+  justify-content: center;
+}
+
+.play-button {
+  aspect-ratio: 0.98;
+  object-fit: contain;
+  object-position: center;
+  width: 242px;
+  max-width: 100%;
+}
