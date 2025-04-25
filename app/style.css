@@ -1,0 +1,200 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+}
+
+/* App container */
+.app-container {
+  max-width: 414px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+}
+
+/* Header section */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-volume {
+  width: 35px;
+  height: 35px;
+  opacity: 0.92;
+  margin-right: 5px;
+}
+
+.icon-zoom {
+  width: 31px;
+  height: 31px;
+  opacity: 0.92;
+}
+
+.app-logo {
+  width: 163px;
+  height: 164px;
+  margin: 0 auto;
+}
+
+/* Content section */
+.app-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.app-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #3f3d56;
+  margin-top: 20px;
+}
+
+.app-tagline {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #3f3d56;
+  margin-top: 10px;
+}
+
+.illustration-container {
+  margin: 20px 0;
+}
+
+.person-illustration {
+  width: 100%;
+  height: auto;
+}
+
+.language-selector {
+  margin: 20px 0;
+}
+
+.language-icon {
+  width: 100%;
+  height: auto;
+}
+
+.get-started-button {
+  position: relative;
+  width: 284px;
+  height: 59px;
+  margin: 0 auto;
+  background-color: #698bcf;
+  border-radius: 33.523px;
+  box-shadow: 0px 6.631px 6.631px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.button-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  color: #fff;
+}
+
+.app-subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgba(63, 61, 86, 0.41);
+  opacity: 0.45;
+  margin-top: 20px;
+}
+
+/* Media queries */
+@media (max-width: 991px) {
+  .app-container {
+    max-width: 991px;
+    padding: 20px;
+  }
+
+  .app-title {
+    font-size: 40px;
+  }
+
+  .app-tagline {
+    font-size: 12px;
+  }
+
+  .get-started-button {
+    width: 250px;
+    height: 50px;
+  }
+
+  .button-text {
+    font-size: 16px;
+  }
+
+  .app-subtitle {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-container {
+    max-width: 640px;
+    padding: 15px;
+  }
+
+  .app-logo {
+    margin-top: auto;
+  }
+
+  .app-content {
+    margin-top: auto;
+  }
+
+  .app-title {
+    font-size: 30px;
+    margin-top: auto;
+  }
+
+  .app-tagline {
+    font-size: 10px;
+  }
+
+  .get-started-button {
+    width: 200px;
+    height: 40px;
+  }
+
+  .button-text {
+    font-size: 14px;
+  }
+
+  .app-subtitle {
+    font-size: 20px;
+  }
+}
