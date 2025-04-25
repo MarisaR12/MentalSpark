@@ -1,0 +1,164 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Roboto,
+    -apple-system,
+    Helvetica,
+    sans-serif;
+}
+
+/* App container */
+.app-container {
+  background-color: rgba(254, 255, 255, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: stretch;
+}
+
+/* Header section */
+.app-header {
+  align-self: start;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.header-logo-part {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 34px;
+  flex-shrink: 0;
+}
+
+.header-logo-accent {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 31px;
+  align-self: start;
+  flex-shrink: 0;
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-heading {
+  color: rgba(63, 61, 86, 1);
+  font-size: 34px;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  text-align: center;
+  align-self: center;
+  margin-top: 195px;
+}
+
+.hero-image {
+  aspect-ratio: 1.49;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  margin-top: 13px;
+}
+
+/* CTA section */
+.cta-section {
+  display: flex;
+  margin-top: 45px;
+  width: 100%;
+  padding-left: 73px;
+  flex-direction: column;
+  font-family:
+    Roboto,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cta-tagline {
+  color: rgba(63, 61, 86, 1);
+  font-size: 14px;
+  align-self: center;
+  margin-left: -3px;
+  font-weight: 700;
+}
+
+.signup-button-container {
+  border-radius: 15px;
+  background-color: rgba(3, 76, 101, 1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 44px;
+  width: 273px;
+  max-width: 100%;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  margin-left: 68px;
+}
+
+.signup-button {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  aspect-ratio: 7.378;
+  width: 100%;
+  padding: 8px 27px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-background {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+}
+
+.button-text {
+  position: relative;
+  z-index: 1;
+}
+
+.bottom-decoration {
+  aspect-ratio: 1.46;
+  object-fit: contain;
+  object-position: center;
+  width: 208px;
+  align-self: end;
+  margin-top: 24px;
+  max-width: 100%;
+  margin-left: 68px;
+}
