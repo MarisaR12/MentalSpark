@@ -1,0 +1,192 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    Roboto,
+    -apple-system,
+    Helvetica,
+    sans-serif;
+}
+
+/* Main container */
+.meditation-completion-screen {
+  background-color: rgba(254, 255, 255, 1);
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  width: 100%;
+  padding-right: 10px;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Header section */
+.app-header {
+  align-self: start;
+  display: flex;
+  align-items: stretch;
+  gap: 2px;
+}
+
+.app-icon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 34px;
+  flex-shrink: 0;
+}
+
+.app-icon-secondary {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 31px;
+  align-self: start;
+  flex-shrink: 0;
+}
+
+/* Main illustration */
+.completion-illustration {
+  aspect-ratio: 1.27;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  align-self: stretch;
+  margin-top: 46px;
+}
+
+/* Completion content section */
+.completion-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.completion-title {
+  color: rgba(63, 61, 86, 1);
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 43px;
+}
+
+.activity-name {
+  color: rgba(105, 139, 207, 1);
+  font-size: 34px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 11px;
+}
+
+.activity-duration {
+  color: rgba(63, 61, 86, 1);
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 17px;
+}
+
+/* Navigation buttons */
+.navigation-buttons {
+  display: flex;
+  margin-top: 35px;
+  width: 100%;
+  max-width: 360px;
+  align-items: stretch;
+  gap: 40px 52px;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.button-container {
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  display: flex;
+  padding: 76px 31px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.action-button {
+  border: none;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.done-button {
+  background-color: rgba(196, 196, 196, 1);
+  font-size: 18px;
+}
+
+.next-button {
+  background-color: rgba(105, 139, 207, 1);
+  font-size: 19px;
+}
+
+/* Footer section */
+.app-footer {
+  display: flex;
+  width: 100%;
+  max-width: 286px;
+  align-items: start;
+  font-size: 14px;
+  color: rgba(63, 61, 86, 1);
+  font-weight: 700;
+  text-align: center;
+}
+
+.footer-item {
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footer-meditation {
+  flex-grow: 1;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-self: stretch;
+  aspect-ratio: 1.142;
+  padding: 49px 10px;
+  font-size: 30px;
+  color: #3f3d56;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-background {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logo-text {
+  position: relative;
+  z-index: 1;
+}
