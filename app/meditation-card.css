@@ -11,7 +11,6 @@ body {
     -apple-system,
     Helvetica,
     sans-serif;
-  background-color: #feffff;
 }
 
 /* Main container */
@@ -52,13 +51,14 @@ body {
   flex-shrink: 0;
 }
 
-/* Main content section */
-.content-section {
+/* Content container */
+.content-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Main meditation background image */
 .meditation-background {
   aspect-ratio: 1.68;
   object-fit: contain;
@@ -67,13 +67,14 @@ body {
   margin-top: 224px;
 }
 
-/* Meditation information */
-.meditation-info {
+/* Meditation details section */
+.meditation-details {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Featured label */
 .featured-label {
   color: rgba(63, 61, 86, 1);
   font-size: 18px;
@@ -82,6 +83,7 @@ body {
   margin-top: 39px;
 }
 
+/* Meditation title */
 .meditation-title {
   color: rgba(105, 139, 207, 1);
   font-size: 34px;
@@ -90,7 +92,8 @@ body {
   margin-top: 14px;
 }
 
-.meditation-details {
+/* Activity duration text */
+.activity-duration {
   color: rgba(63, 61, 86, 1);
   font-size: 14px;
   font-weight: 300;
@@ -98,17 +101,21 @@ body {
   margin-top: 17px;
 }
 
-/* Controls section */
-.controls-section {
+/* Play button */
+.play-button {
+  background: none;
+  border: none;
+  cursor: pointer;
   margin-top: 19px;
-  display: flex;
-  justify-content: center;
+  padding: 0;
 }
 
-.play-button {
+/* Play icon */
+.play-icon {
   aspect-ratio: 0.98;
   object-fit: contain;
   object-position: center;
+  margin-right: 200px;
   width: 242px;
   max-width: 100%;
 }
