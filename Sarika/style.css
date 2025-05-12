@@ -33,13 +33,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100px; /* Larger than before */
-  height: 100px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
   border-radius: 20px;
-  opacity: 0.9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  opacity: 1; /* full visibility, no fading */
+  box-shadow: none; /* remove all shadows */
   pointer-events: none;
   z-index: 1;
 }
+
 
