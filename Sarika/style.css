@@ -1,28 +1,41 @@
 body {
-margin: 0;
-background-color: #F4E3FF; /* Light purple background */
-display: flex;
-justify-content: center;
-align-items: start;
-height: 100vh;
-padding-top: 100px;
+  margin: 0;
+  background-color: #F4E3FF; /* Light purple background */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  padding-top: 100px;
 }
 
 .container {
-width: 200px;
-height: 200px;
-background: linear-gradient(145deg, #7a5598, #9b75c2); /* subtle gradient border look */
-display: flex;
-flex-wrap: wrap;
-padding: 10px;
-border-radius: 20px;
-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative; /* Enable absolute positioning for children */
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(145deg, #7a5598, #9b75c2); /* subtle gradient border look */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
 } 
 
 .square {
-width: 90px;
-height: 90px;
-margin: 5px;
-background-color: #3b1f52; /* Dark purple */
-border-radius: 20px;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  background-color: #3b1f52; /* Dark purple */
+  border-radius: 20px;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keeps the image scaled properly */
+  opacity: 0.8; /* Slight transparency to show square edges */
+  border-radius: 20px;
+  pointer-events: none; /* Prevents image from blocking interactions */
 }
