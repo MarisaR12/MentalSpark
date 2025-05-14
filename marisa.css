@@ -120,18 +120,34 @@ margin-left: 20px;
 }
 
 .me{
-padding-left: 30%;
+padding-left: 23%;
   padding-top: 3%;
-  opacity:0%;
+  opacity:100%;
   
 
 }
 .button{
   margin: 0;
   position: absolute;
-  top: 50%;
+  top: 70%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  padding-left: 45%;
+  padding-left: 35%;
 }
+
+.portfolio {
+height: 50px;
+  width: 150px;
+  border: solid;
+  border-width: 2px;
+    font-family:"Zain", sans-serif;
+  font-size:1.5em;
+  background-color: #c3c1a0;
+border-color:#f3f1db;
+  transition-duration: 0.4s;
+
+  }
+
+.portfolio:hover{
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
 
