@@ -81,8 +81,9 @@ li a {
 }
 
 li a:hover {
-  background-color: #e0e0e0;
-  opacity: 50%;
+  background-color: #c3c1a0;
+  color:#d2aca1;
+ 
 }
 
 .header {
