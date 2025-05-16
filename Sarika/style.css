@@ -1,61 +1,63 @@
 body {
-margin: 0;
-font-family: Arial, sans-serif;
-background: linear-gradient(to bottom right, #1e3c72, #2a0845);
-color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #1e3c72, #2a0845);
+  color: white;
 }
 
-/* Header with transparent background image and gradient overlay */
+/* Header with more visible background image */
 .header {
-background: url('bg.jpg') no-repeat center center/cover;
-padding: 30px 20px;
-text-align: center;
-background-blend-mode: overlay;
-background-color: rgba(0, 0, 50, 0.5); /* transparent dark overlay */
-border-bottom: 2px solid #aaa;
+  background: url('bg.jpg') no-repeat center center/cover;
+  padding: 30px 20px;
+  text-align: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 50, 0.3); /* lighter overlay */
+  border-bottom: 2px solid #aaa;
 }
 
 .header h1, .header h2, .header h3, .header h4 {
-margin: 5px;
+  margin: 5px;
 }
 
 /* Main content area */
 .main {
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
-/* Semi-transparent purple box for About Me */
+/* About Me section with more transparent light hue */
 .about {
-background-color: rgba(128, 0, 128, 0.5); /* purple with transparency */
-padding: 20px;
-margin: 20px;
-border-radius: 10px;
-max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.1); /* light transparent white */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  backdrop-filter: blur(5px); /* optional: adds soft blur effect */
 }
 
-/* CONTENT section styling */
+/* Content section with light indigo transparency */
 .content {
-background-color: rgba(75, 0, 130, 0.5); /* indigo transparent */
-padding: 20px;
-margin: 20px;
-border-radius: 10px;
-max-width: 600px;
-text-align: center;
+  background-color: rgba(173, 216, 230, 0.1); /* light transparent blue */
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  backdrop-filter: blur(5px); /* optional */
 }
 
 .content-img {
-max-width: 100%;
-border: 2px solid white;
-margin-top: 10px;
-border-radius: 5px;
+  max-width: 100%;
+  border: 2px solid white;
+  margin-top: 10px;
+  border-radius: 5px;
 }
 
 footer {
-text-align: center;
-margin: 40px 0 10px;
-font-style: italic;
-color: #ccc;
+  text-align: center;
+  margin: 40px 0 10px;
+  font-style: italic;
+  color: #ccc;
 }
