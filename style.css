@@ -81,7 +81,8 @@ ul {
 .box {
   background-color: #5675b5;
   width: 25%;
-  height: 400px;
+  min-height: 400px;
+  max-height: 1000px;
   border-radius: 25px;
   text-align: center;
   color: white;
