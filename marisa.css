@@ -1,5 +1,5 @@
 html,body{
-  height: 99%;
+  height: 60%;
   width: 99%;
   background-image: url("background2.jpg");
   margin: 0;
@@ -25,7 +25,7 @@ html,body{
   float:left;
   width:40%;
   margin-top:65px;
-  height: 360px;
+  height: 405px;
   font-family: "Poppins", sans-serif;
   margin-left: 30px;
   border-color:#f9d7ef;
@@ -38,8 +38,9 @@ html,body{
 #about, #role {
   background-color: #ffffff;
   width: 50%;
-  height: 170px;
+  height: 190px;
   font-family: "Poppins", sans-serif;
+  font-size: 1.2em;
   float:right;
   margin-right: 30px;
   border-color:#f9d7ef;
@@ -49,6 +50,7 @@ html,body{
 
 #about{
   margin-top:65px;
+  font-size: 1.3em;
 }
 #role{
   margin-top: 20px;
@@ -81,10 +83,8 @@ li a {
 }
 
 li a:hover {
-  background-color: #d2aca1;
-  color:#c3c1a0;
-
- 
+background-color: #5675b5;
+color: #e8ebc0;
 }
 
 .header {
@@ -101,15 +101,15 @@ li a:hover {
 
 .name {
   font-family: "Ephesis", cursive;
-  font-size: 50px;
-  margin-top: 30px;
+  font-size: 5em;
+  margin-top: 2px;
 }
 
 .role {
   font-family: "Zain", sans-serif;
-  font-size: 20px;
+  font-size: 2em;
   color: #000000;
-  margin-top: -30px;
+  margin-top: -70px;
   margin-bottom: 0px;
 }
 
@@ -152,4 +152,3 @@ border-color:#f3f1db;
 
 .portfolio:hover{
 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);}
-
